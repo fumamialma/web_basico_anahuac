@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/lightbox.css">
+    <link rel="stylesheet" href="/css/codepengallery.css">
+  </head>
+  <body>
+    <!-- Este es un comentario html -->
+    <div id="container">
+      <section class="galeria1">
+       <figure>
+        <a href="images/foto1.jpg" data-lightbox="Portafolio1" data-title="Foto mujer bajo el agua.">
+          <img src="images/tb300_foto1.jpg" alt="Foto mujer bajo el agua.">
+        </a>
+        <a href="images/foto2.jpg" data-lightbox="Portafolio1" data-title="Foto mujer frente al mar.">
+          <img src="images/tb300_foto2.jpg" alt="Foto mujer frente al mar.">
+        </a>
+        <a href="images/foto3.jpg" data-lightbox="Portafolio1" data-title="Foto mujer con sombras.">
+          <img src="images/tb300_foto3.jpg" alt="Foto mujer con sombras.">
+        </a>
+       </figure>
+      </section>
+      <section class="galeria2">
+        <div class="frame">
+          <div class="pics">
+            <div class="pic pic-1"><img src="http://100dayscss.com/codepen/40-1.jpg" alt="" /></div>
+            <div class="pic pic-2"><img src="http://100dayscss.com/codepen/40-2.jpg" alt="" /></div>
+            <div class="pic pic-3"><img src="http://100dayscss.com/codepen/40-3.jpg" alt="" /></div>
+            <div class="pic pic-4"><img src="http://100dayscss.com/codepen/40-4.jpg" alt="" /></div>
+            <div class="pic pic-5"><img src="http://100dayscss.com/codepen/40-5.jpg" alt="" /></div>
+            <div class="pic pic-6"><img src="http://100dayscss.com/codepen/40-6.jpg" alt="" /></div>
+            <div class="pic pic-7"><img src="http://100dayscss.com/codepen/40-7.jpg" alt="" /></div>
+            <div class="pic pic-8"><img src="http://100dayscss.com/codepen/40-8.jpg" alt="" /></div>
+            <div class="pic pic-9"><img src="http://100dayscss.com/codepen/40-9.jpg" alt="" /></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script type="text/javascript">
+      $('.pic').bind('click', function() {
+      $('.pic').toggleClass('away');
+      $(this).removeClass('away').toggleClass('active');
+      });
+    </script>
+  </body>
+</html>
